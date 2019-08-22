@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Keyword Algorithm
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-item>
+      <ion-label position="floating">Input</ion-label>
+      <ion-textarea auto-grow="true" id="comments-box"></ion-textarea>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Keyword</ion-label>
+      <ion-textarea id="keyword-box"></ion-textarea>
+    </ion-item>
+    <br>
+    <ion-button size="large" expand="full" (click)="searchKeyword()">Search</ion-button>
+    <br>
+    <div id="result-box"></div>
   </div>
 </ion-content>
